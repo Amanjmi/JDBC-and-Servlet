@@ -23,7 +23,7 @@ public class Self2 {
 		System.out.println("Enter employee gender");
 		String gender = scn.next(); 
 		String sqlSelect = String.format("insert into employee(name, salary, gender)values('%s',%d,'%s')",name,salary,gender);
-	//	String sqlQuery = "insert into employee(name, salary, gender) values ('prabhat',330000,'M')";
+	//	String sqlQuery = "insert into employee(name, salary, gender) values ('anil',3220000,'M')";
 		int rowAff =statement.executeUpdate(sqlSelect);
 		System.out.println("Updated DB");
 		System.out.println("No. of rows affected is :: "+
